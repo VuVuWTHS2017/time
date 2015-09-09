@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public static void main(String args[]){
+      Scanner time = new Scanner(System.in);
+      int totalS = time.nextInt();
+      int hours = 0;
+      int minutes = 0;
+      int seconds = 0;
+      
+      hours = totalS / 3600;
+      minutes = (totalS % 3600) / 60;
+      seconds = (totalS % 3600) % 60;
+      
+      System.out.println("The time is " + hours + "hours, " + minutes + "minutes, " + "and " + seconds + "seconds.");
+     } 
+}
